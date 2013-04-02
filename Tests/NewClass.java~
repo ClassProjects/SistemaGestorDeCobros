@@ -1,0 +1,32 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package tests;
+
+/**
+ *
+ * @author guillermo
+ */
+import java.io.File;
+import java.util.*;
+
+public class NewClass {
+
+    static Formatter F;
+
+    public static void main(String[] args) {
+
+        try {
+            Scanner entrada = new Scanner(new File(".//src/tests/Memo.txt"));
+            while (entrada.hasNext()) {
+
+                String N = entrada.nextLine();
+                System.out.println(N);
+
+            }
+            entrada.close();
+        } catch (Exception ex) {
+        }
+    }
+}
